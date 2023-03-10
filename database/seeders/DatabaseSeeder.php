@@ -2,8 +2,6 @@
 
 namespace Database\Seeders;
 
-use App\Models\Invoice;
-use Illuminate\Database\Eloquent\Factories\Factory;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -20,8 +18,5 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
-        $this->call([
-            CustomerSeeder::class
-        ]);
     }
 }

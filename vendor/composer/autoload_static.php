@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitf861a7d397cac669a5dcdec6b0baa709
+class ComposerStaticInit22a205b6c4560c56f6e06a7c896eca6d
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -507,9 +507,9 @@ class ComposerStaticInitf861a7d397cac669a5dcdec6b0baa709
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
-        'App\\Http\\Controllers\\Api\\V1\\CustomerController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/V1/CustomerController.php',
-        'App\\Http\\Controllers\\Api\\V1\\InvoiceController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/V1/InvoiceController.php',
+        'App\\Http\\Controllers\\Api\\TodolistController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/TodolistController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\TodolistController' => __DIR__ . '/../..' . '/app/Http/Controllers/TodolistController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
@@ -520,19 +520,8 @@ class ComposerStaticInitf861a7d397cac669a5dcdec6b0baa709
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\ValidateSignature' => __DIR__ . '/../..' . '/app/Http/Middleware/ValidateSignature.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
-        'App\\Http\\Requests\\StoreCustomerRequest' => __DIR__ . '/../..' . '/app/Http/Requests/StoreCustomerRequest.php',
-        'App\\Http\\Requests\\StoreInvoiceRequest' => __DIR__ . '/../..' . '/app/Http/Requests/StoreInvoiceRequest.php',
-        'App\\Http\\Requests\\UpdateCustomerRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UpdateCustomerRequest.php',
-        'App\\Http\\Requests\\UpdateInvoiceRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UpdateInvoiceRequest.php',
-        'App\\Http\\Resources\\V1\\CustomerCollection' => __DIR__ . '/../..' . '/app/Http/Resources/V1/CustomerCollection.php',
-        'App\\Http\\Resources\\V1\\CustomerResource' => __DIR__ . '/../..' . '/app/Http/Resources/V1/CustomerResource.php',
-        'App\\Http\\Resources\\V1\\InvoiceCollection' => __DIR__ . '/../..' . '/app/Http/Resources/V1/InvoiceCollection.php',
-        'App\\Http\\Resources\\V1\\InvoiceResource' => __DIR__ . '/../..' . '/app/Http/Resources/V1/InvoiceResource.php',
-        'App\\Models\\Customer' => __DIR__ . '/../..' . '/app/Models/Customer.php',
-        'App\\Models\\Invoice' => __DIR__ . '/../..' . '/app/Models/Invoice.php',
+        'App\\Models\\Todolist' => __DIR__ . '/../..' . '/app/Models/Todolist.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
-        'App\\Policies\\CustomerPolicy' => __DIR__ . '/../..' . '/app/Policies/CustomerPolicy.php',
-        'App\\Policies\\InvoicePolicy' => __DIR__ . '/../..' . '/app/Policies/InvoicePolicy.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
@@ -648,12 +637,8 @@ class ComposerStaticInitf861a7d397cac669a5dcdec6b0baa709
         'Cron\\HoursField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/HoursField.php',
         'Cron\\MinutesField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MinutesField.php',
         'Cron\\MonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
-        'Database\\Factories\\CustomerFactory' => __DIR__ . '/../..' . '/database/factories/CustomerFactory.php',
-        'Database\\Factories\\InvoiceFactory' => __DIR__ . '/../..' . '/database/factories/InvoiceFactory.php',
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
-        'Database\\Seeders\\CustomerSeeder' => __DIR__ . '/../..' . '/database/seeders/CustomerSeeder.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
-        'Database\\Seeders\\InvoiceSeeder' => __DIR__ . '/../..' . '/database/seeders/InvoiceSeeder.php',
         'DeepCopy\\DeepCopy' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
         'DeepCopy\\Exception\\CloneException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/CloneException.php',
         'DeepCopy\\Exception\\PropertyException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/PropertyException.php',
@@ -6254,10 +6239,10 @@ class ComposerStaticInitf861a7d397cac669a5dcdec6b0baa709
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitf861a7d397cac669a5dcdec6b0baa709::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitf861a7d397cac669a5dcdec6b0baa709::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitf861a7d397cac669a5dcdec6b0baa709::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitf861a7d397cac669a5dcdec6b0baa709::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit22a205b6c4560c56f6e06a7c896eca6d::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit22a205b6c4560c56f6e06a7c896eca6d::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit22a205b6c4560c56f6e06a7c896eca6d::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit22a205b6c4560c56f6e06a7c896eca6d::$classMap;
 
         }, null, ClassLoader::class);
     }
